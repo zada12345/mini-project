@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mini-Project</title>
+    <!-- Link ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1>Daftar Tugas</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Masukkan tugas..." required />
+            <input type="date" id="date-input" required />
+            <button type="submit">Tambah</button>
+        </form>
+
+        <div class="filter">
+            <label for="filter-select">Filter:</label>
+            <select id="filter-select">
+                <option value="all">Semua</option>
+                <option value="today">Hari Ini</option>
+                <option value="upcoming">Mendatang</option>
+            </select>
+        </div>
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <!-- Link ke file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
